@@ -1,4 +1,4 @@
-import {format} from "date-fns";
+const {format} = require("date-fns");
 
 const dateFormats = {
     longDate: 'EEE do MMMM yyyy hh:mmaaa',
