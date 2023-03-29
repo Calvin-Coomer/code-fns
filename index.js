@@ -9,3 +9,5 @@ module.exports = {
     ...formatting,
     ...misc
 }
+
+// npm publish --access public

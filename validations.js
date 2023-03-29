@@ -54,6 +54,10 @@ const isValidUrl = urlString=> {
     return !!urlPattern.test(urlString);
 }
 
+const arrPopulated = (arr) => {
+    return Array.isArray(arr) && arr.length > 0;
+}
+
 module.exports = {
     vRequired,
     vNotZero,
@@ -72,4 +76,5 @@ module.exports = {
     vPartnerCode,
     runValidations,
     isValidUrl,
+    arrPopulated
 }

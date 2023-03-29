@@ -32,11 +32,11 @@ const getFormattedDate = (typeStr, formatStr, date) => {
     }
 }
 
-getFormattedDate.longDate = (date) => new Date(date, dateFormats.longDate);
-getFormattedDate.longDateOnly = (date) => new Date(date, dateFormats.longDateOnly);
-getFormattedDate.medLongDate = (date) => new Date(date, dateFormats.medLongDate);
-getFormattedDate.medDate = (date) => new Date(date, dateFormats.medDate);
-getFormattedDate.hourOnly = (date) => new Date(date, dateFormats.hourOnly);
+getFormattedDate.longDate = (date) => format(new Date(date), dateFormats.longDate);
+getFormattedDate.longDateOnly = (date) => format(new Date(date), dateFormats.longDateOnly);
+getFormattedDate.medLongDate = (date) => format(new Date(date), dateFormats.medLongDate);
+getFormattedDate.medDate = (date) => format(new Date(date), dateFormats.medDate);
+getFormattedDate.hourOnly = (date) => format(new Date(date), dateFormats.hourOnly);
 
 const initialsDisplay = (str) => {
     try {
